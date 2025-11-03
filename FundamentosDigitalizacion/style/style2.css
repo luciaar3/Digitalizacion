@@ -1,0 +1,38 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: #fff0f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+section header{
+    position: fixed;
+    background-color: aqua;
+}
+#secciones{
+    
+}
+
+main{
+    display: flex;
+    gap: 15px;
+}
+
+#indice{
+    background-color: aliceblue;
+    position: fixed;
+    border-radius: 7px;
+    padding: 15px;
+    height: 100vh;
+}
+
+ol li{
+    margin: 15px;
+    list-style: none;
+}
+#indice ol li a{
+    color: #333;
+    text-decoration: none;
+    padding: 30px;
+}
