@@ -10,13 +10,12 @@ section header{
     position: fixed;
     background-color: aqua;
 }
-#secciones{
-    
-}
 
 main{
     display: flex;
     gap: 15px;
+    bottom: 0;
+    width: 100%;
 }
 
 #indice{
