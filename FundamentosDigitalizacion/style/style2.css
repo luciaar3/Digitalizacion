@@ -1,7 +1,7 @@
 body {
     font-family: "Poppins", sans-serif;
-    background: #fff0f5;
-    color: #333;
+    background: #e6f0ff;
+    color: #1a1a1a;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -10,14 +10,14 @@ body {
 main{
     display: flex;
     gap: 20px;
-    padding: 20px;
 }
 #header{
     display: block;
 }
  #indice{
+    color: pink;
     position: sticky;
-    background-color: aliceblue;
+    background-color: #d9e6ff;
     top: 20px;
     height: fit-content;
     padding: 20px;
@@ -33,21 +33,21 @@ main{
     padding: 10px 0;
  }
  #indice ol li a{
-    color: black;
+    color: #003366;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
  }
 
  #indice ol li a:hover{
-    color: #ff69b4;
+    color: #4a00ff;
  }
 
  #secciones{
-    flex: 1;
     background-color: #f0f8ff; 
     padding: 20px;
     border-radius: 10px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -60,7 +60,7 @@ main{
    align-items: center;
    text-align: center;
    position: relative;
-   color: white;
+   color: #003366;
    text-shadow: 0 2px 6px rgba(0,0,0,0.4);
    background: url('../images/portada.jpg') center/cover no-repeat;
  }
@@ -78,14 +78,14 @@ main{
 #titulo button {
     padding: 10px 20px;
     font-size: 1rem;
-    background-color: #ffb6c1;
+    background-color: #4a90ff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 #titulo button:hover {
-    background-color: #ff69b4;
+    background-color: #6a5cff;
     transform: translateY(-2px);
 }
 
@@ -94,7 +94,9 @@ main{
     line-height: 1.6;
     margin-bottom: 10px;
     padding: 10px;
+    margin: 0 20px;
     border-radius: 8px;
+    background-color: #ffffffcc;
 }
 
 section img {
@@ -106,7 +108,7 @@ section img {
 }
 
 section h3 {
-    color: #ff69b4;
+    color: #004080;
     margin-bottom: 15px;
     font-size: 1.8rem;
 }
@@ -116,11 +118,22 @@ section h3 {
     gap: 5px;
 }
 #columna-it, #columna-ot {
-    background-color: #fff0f5;
+    background-color: #d9e6ff;
     padding: 15px;
     border-radius: 10px;
     margin: 10px 0;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+footer{
+    background-color: #003366;
+    padding: 30px;
+    color: #4a90ff;
+}
+h3{
+    padding: 12px;
+    border-bottom: 3px solid blue;
+    border-radius: 3px;
 }
 
  
