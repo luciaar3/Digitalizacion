@@ -6,32 +6,122 @@ body {
     padding: 0;
     text-align: center;
 }
-section header{
-    position: fixed;
-    background-color: aqua;
-}
 
 main{
     display: flex;
-    gap: 15px;
-    bottom: 0;
-    width: 100%;
+    gap: 20px;
+    padding: 20px;
 }
-
-#indice{
+#header{
+    display: block;
+}
+ #indice{
+    position: sticky;
     background-color: aliceblue;
-    position: fixed;
-    border-radius: 7px;
-    padding: 15px;
-    height: 100vh;
+    top: 20px;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+ }
+ #indice ol{
+    padding: 0;
+    margin: 0;
+ }
+ ol li  {
+    list-style: none;
+    padding: 10px 0;
+ }
+ #indice ol li a{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+ }
+
+ #indice ol li a:hover{
+    color: #ff69b4;
+ }
+
+ #secciones{
+    flex: 1;
+    background-color: #f0f8ff; 
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+ #titulo{
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   position: relative;
+   color: white;
+   text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+   background: url('../images/portada.jpg') center/cover no-repeat;
+ }
+
+ #titulo h1 {
+    font-size: 3rem;
+    margin: 0.5rem 0;
 }
 
-ol li{
-    margin: 15px;
-    list-style: none;
+#titulo h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
 }
-#indice ol li a{
-    color: #333;
-    text-decoration: none;
-    padding: 30px;
+
+#titulo button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ffb6c1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
+#titulo button:hover {
+    background-color: #ff69b4;
+    transform: translateY(-2px);
+}
+
+#texto, section p, section li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+section h3 {
+    color: #ff69b4;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+#columnas{
+    display: flex;
+    gap: 5px;
+}
+#columna-it, #columna-ot {
+    background-color: #fff0f5;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+ 
+ 
