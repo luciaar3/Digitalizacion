@@ -5,67 +5,94 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-main{
-    display: flex;
-    gap: 20px;
-}
-#header{
-    display: block;
-}
- #indice{
-    color: pink;
+#header {
+    width: 100%;
+    background-color: #fff0f5;
+    padding: 15px 0;
     position: sticky;
+    top: 0;
+    border-bottom: 1px solid #ffb6c1;
+}
+
+#texto {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    gap: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#indice {
+    position: sticky;
+    top: 100px;
     background-color: #d9e6ff;
-    top: 20px;
     height: fit-content;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
- }
- #indice ol{
-    padding: 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#indice ol {
     margin: 0;
- }
- ol li  {
+    padding: 0;
+}
+
+#indice ol li {
     list-style: none;
-    padding: 10px 0;
- }
- #indice ol li a{
-    color: #003366;
+    padding: 10px;
+}
+
+#indice ol li a {
+    color: black;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
- }
+}
 
- #indice ol li a:hover{
-    color: #4a00ff;
- }
+#indice ol li a:hover {
+    color: #481569;
+}
 
- #secciones{
-    background-color: #f0f8ff; 
-    padding: 20px;
+ol li { 
+    list-style: none; 
+    padding: 10px 0; 
+}
+
+#secciones {
+    background-color: aliceblue;
+    margin-left: 10px;
+    padding: 70px;
     border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    gap: 50px;
+}
+
+#titulo {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    color: #003366;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    background: url('../images/portada.jpg') center/cover no-repeat;
+    border-radius: 10px;
 }
- #titulo{
-   height: 100vh;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-   position: relative;
-   color: #003366;
-   text-shadow: 0 2px 6px rgba(0,0,0,0.4);
-   background: url('../images/portada.jpg') center/cover no-repeat;
- }
 
- #titulo h1 {
+#titulo h1 {
     font-size: 3rem;
     margin: 0.5rem 0;
 }
@@ -84,57 +111,57 @@ main{
     cursor: pointer;
     transition: background-color 0.3s;
 }
+
 #titulo button:hover {
     background-color: #6a5cff;
-    transform: translateY(-2px);
 }
 
-#texto, section p, section li {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 10px;
-    padding: 10px;
-    margin: 0 20px;
-    border-radius: 8px;
-    background-color: #ffffffcc;
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
 }
 
 section img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
-    margin: 20px 0;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 20px 5px 20px 5px; /* esquinas alternadas */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-section h3 {
-    color: #004080;
-    margin-bottom: 15px;
+
+
+section h3 { 
+    color: #004080; 
+    margin-bottom: 70px; 
     font-size: 1.8rem;
+    border-bottom: 3px solid blue; 
 }
 
-#columnas{
-    display: flex;
+#columnas{ 
+    display: flex; 
     gap: 5px;
 }
-#columna-it, #columna-ot {
-    background-color: #d9e6ff;
-    padding: 15px;
-    border-radius: 10px;
-    margin: 10px 0;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
+#columna-it, #columna-ot { 
+    background-color: #d9e6ff; 
+    padding: 15px; 
+    border-radius: 10px; 
+    margin: 10px 0; 
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1); 
 }
 
-footer{
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-color: #003366;
-    padding: 30px;
+    padding: 10px 0;
+    font-size: 0.9rem;
     color: #4a90ff;
 }
-h3{
-    padding: 12px;
-    border-bottom: 3px solid blue;
-    border-radius: 3px;
-}
-
- 
- 
