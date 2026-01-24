@@ -1,84 +1,116 @@
-# UD 03: Sistemas Cloud - El Continuo Computacional
+# ☁️ UDI 03: Sistemas Cloud y el Continuo Computacional (Cloud-Edge)
 
-Este proyecto recoge la documentación técnica sobre la evolución de los sistemas de computación, desde el almacenamiento centralizado en la nube (**Cloud**) hasta el procesamiento en el extremo de la red (**Edge**).
-
-## 1. Introducción: La Transformación Digital
-La migración a la nube no es solo una opción tecnológica, sino una **necesidad estratégica**. Permite a las organizaciones:
-* **Visión 360º del cliente**: Unificar datos para un conocimiento profundo.
-* **Optimización de operaciones**: Mejora logística y reducción de stock.
-* **Agilidad**: Respuesta rápida ante mercados cambiantes.
-
-![Arquitectura Cloud Computing](./img/1.webp)
-
+> **Asignatura:** Digitalització aplicada al sistema productiu
+> **Unidad Didáctica:** 03 - Sistemas Cloud
 
 ---
 
-## 2. Cloud Computing: Poder Centralizado
+## 1. Introducción: La Estrategia de la Nube
 
-El *Cloud Computing* ofrece una alternativa rentable a la infraestructura local (*on-premise*).
+La adopción de la nube (**Cloud Computing**) ha dejado de ser una tendencia para convertirse en el pilar de la **transformación digital** de cualquier empresa moderna. No se trata solo de mover servidores, sino de una reestructuración estratégica que permite:
 
-### Beneficios Principales
-1. **Reducción de Costes**: Se elimina la inversión inicial en hardware y se reduce el gasto energético.
-2. **Innovación Constante**: Acceso inmediato a actualizaciones y nuevas tecnologías.
-3. **Escalabilidad**: Capacidad de ampliar o reducir recursos según la demanda real.
-4. **Seguridad**: Protección de datos gestionada por expertos.
+*   **Conocimiento 360º del Cliente:** Al unificar los datos en un entorno centralizado, se obtiene una visión completa para personalizar servicios y ofertas.
+*   **Eficiencia Operacional:** Optimización de la cadena de suministro, reducción de inventario y mejora en la logística gracias al análisis de datos a gran escala.
+*   **Flexibilidad y Agilidad:** Capacidad de adaptación rápida a las fluctuaciones del mercado y de lanzar nuevos productos o servicios en tiempo récord.
 
-### Modelos de Servicio
-La nube se divide en diferentes niveles de responsabilidad:
-* **IaaS (Infraestructura)**: Alquiler de servidores y redes.
-* **PaaS (Plataforma)**: Entorno para que los desarrolladores creen aplicaciones.
-* **SaaS (Software)**: Aplicaciones listas para usar (ej. Gmail, Office 365).
-* **CaaS (Contenedores)**: Gestión de aplicaciones mediante contenedores.
-
-
+![Arquitectura Cloud Computing](./img/1.jpg)
 
 ---
 
-## 3. El Desafío del IoT y la Latencia
+## 2. Cloud Computing: El Cerebro Centralizado
 
-Con el auge del *Internet de las Cosas* (IoT), miles de millones de dispositivos generan datos masivos. Esto provoca:
-* **Saturación de banda**: Demasiada información viajando por la red.
-* **Latencia**: El retraso en el tiempo de respuesta, crítico en situaciones de emergencia.
+El Cloud Computing es el modelo que permite el acceso bajo demanda a recursos informáticos (servidores, almacenamiento, bases de datos, software) a través de Internet, con un pago por uso.
 
----
+### 2.1. Ventajas Clave
 
-## 4. Edge Computing: Procesamiento en la Periferia
+1.  **Ahorro de Costes (CAPEX a OPEX):** Se elimina la necesidad de grandes inversiones iniciales en hardware (Gasto de Capital - CAPEX), pasando a un modelo de gasto operativo (OPEX) más predecible y escalable.
+2.  **Innovación Continua:** Las plataformas en la nube se actualizan constantemente, dando acceso inmediato a las últimas tecnologías (Inteligencia Artificial, Machine Learning, etc.) sin esfuerzo de mantenimiento local.
+3.  **Escalabilidad Elástica:** La capacidad de aumentar o disminuir los recursos de forma automática y casi instantánea en función de la demanda real.
+4.  **Seguridad Gestionada:** Los proveedores invierten miles de millones en seguridad física y lógica, ofreciendo un nivel de protección que pocas empresas podrían replicar por sí mismas.
 
-El **Edge Computing** consiste en procesar los datos lo más cerca posible de donde se generan. 
+### 2.2. Modelos de Servicio (La Pila de la Nube)
 
-### Ventajas del Edge:
-- **Inmediatez**: Decisiones en milisegundos.
-- **Privacidad**: Los datos sensibles no abandonan el perímetro local.
-- **Eficiencia**: Solo se envía a la nube la información estrictamente necesaria.
+La responsabilidad de la gestión se comparte entre el proveedor y el cliente, definiendo los siguientes modelos:
 
-![computing architecture vs cloud computing](./img/2.jpg)
-
-
-### Ejemplos de Uso
-- **Vehículos Autónomos**: Deben frenar o esquivar obstáculos sin esperar respuesta de un servidor lejano.
-- **Edge AI**: Reconocimiento facial en smartphones (el proceso ocurre en el chip del teléfono).
-- **Ciudades Inteligentes**: Gestión de semáforos en tiempo real.
+| Modelo | Descripción | Responsabilidad del Cliente | Ejemplo |
+| :--- | :--- | :--- | :--- |
+| **IaaS** (Infraestructura como Servicio) | Se alquilan los componentes básicos: servidores, redes, almacenamiento. | Sistema Operativo, Aplicaciones, Datos. | AWS EC2, Azure VMs |
+| **PaaS** (Plataforma como Servicio) | Se proporciona un entorno completo para desarrollar, ejecutar y gestionar aplicaciones. | Aplicaciones, Datos. | Google App Engine, Heroku |
+| **SaaS** (Software como Servicio) | El software está listo para usar a través de un navegador web. | Ninguna (solo el uso y los datos). | Gmail, Office 365, Salesforce |
+| **CaaS** (Contenedores como Servicio) | Un modelo intermedio que facilita el despliegue y gestión de aplicaciones en contenedores (Docker, Kubernetes). | Configuración del Contenedor, Aplicaciones, Datos. | AWS EKS, Google GKE |
 
 ---
 
-## 5. Resumen: Cloud vs. Edge
+## 3. El Desafío de la Latencia y el IoT
 
-Ambas tecnologías son **complementarias**. Mientras que el Cloud es ideal para el análisis masivo de datos históricos, el Edge es vital para la acción inmediata.
+El crecimiento exponencial del **Internet de las Cosas (IoT)**, con miles de millones de dispositivos conectados (sensores, cámaras, vehículos), ha puesto en jaque el modelo de Cloud centralizado.
+
+Los problemas principales son:
+
+*   **Saturación de Ancho de Banda:** Enviar *todos* los datos generados por el IoT a la nube es ineficiente y costoso.
+*   **Latencia Crítica:** El tiempo de ida y vuelta de los datos al centro de datos remoto es demasiado lento para aplicaciones que requieren una respuesta en tiempo real (ej. cirugía robótica, vehículos autónomos).
+
+---
+
+## 4. Edge Computing: La Inteligencia Descentralizada
+
+El **Edge Computing** es la solución a la latencia, llevando la capacidad de procesamiento y almacenamiento de datos al **extremo de la red**, es decir, lo más cerca posible de la fuente de datos (el dispositivo IoT).
+
+### 4.1. Beneficios Estratégicos del Edge
+
+*   **Inmediatez (Latencia Cero):** Las decisiones se toman en milisegundos en el propio dispositivo o en un servidor local (gateway), lo cual es vital para la seguridad y la automatización.
+*   **Privacidad y Soberanía del Dato:** Los datos sensibles pueden ser procesados y anonimizados localmente, sin necesidad de ser transmitidos a la nube, cumpliendo con regulaciones como el GDPR.
+*   **Optimización de Red:** Se reduce drásticamente la cantidad de datos que se envían a la nube, enviando solo los resultados del análisis o los datos agregados.
+
+### 4.2. Casos de Uso Reales
+
+*   **Vehículos Autónomos:** El coche debe procesar la información de sus sensores (cámaras, radar) y decidir si frena o gira *al instante*, sin depender de una conexión remota.
+*   **Fábricas Inteligentes (Industria 4.0):** Monitorización y control de maquinaria en tiempo real para detectar fallos o realizar ajustes de precisión.
+*   **Edge AI:** La ejecución de modelos de Inteligencia Artificial (ej. reconocimiento facial o de voz) directamente en el chip del smartphone o en una cámara de seguridad.
+
+![Arquitectura Edge Computing](./img/3.jpg)
+
+---
+
+## 5. Conclusión: Cloud y Edge, una Relación Complementaria
+
+El Cloud y el Edge no son tecnologías rivales, sino **socios indispensables** en el continuo computacional.
 
 | Característica | Cloud Computing | Edge Computing |
 | :--- | :--- | :--- |
-| **Tiempo de respuesta** | Lento (Latencia alta) | Instantáneo (Latencia baja) |
-| **Lugar de proceso** | Centros de datos remotos | Dispositivos locales |
-| **Escalabilidad** | Muy alta | Limitada al hardware local |
-| **Uso de red** | Alto consumo de banda | Bajo consumo de banda |
+| **Propósito Principal** | Análisis de Big Data, almacenamiento histórico, desarrollo de modelos de IA. | Acción inmediata, baja latencia, filtrado de datos. |
+| **Ubicación del Proceso** | Centros de datos remotos (Centralizado). | Dispositivos o gateways locales (Descentralizado). |
+| **Latencia** | Alta (segundos o cientos de milisegundos). | Muy baja (milisegundos). |
+| **Ancho de Banda** | Alto consumo (se envían todos los datos). | Bajo consumo (se envían solo los resultados). |
+
+El futuro pasa por una arquitectura híbrida donde el **Edge** se encarga de la acción rápida y el **Cloud** de la inteligencia a largo plazo.
+
+![Arquitectura Edge Computing vs Cloud Computing](./img/2.jpg)
 
 ---
 
-## Recursos de Markdown Utilizados
-Para la correcta visualización de este archivo, se recomienda consultar:
-* [Documentación Oficial de GitHub - Basic Syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-* [Markdown Cheat Sheet (Español)](https://markdowncheatsheet.net/es)
-* [Markdown Guide](https://www.markdownguide.org/cheat-sheet/)
+## 🛠️ Requisitos de Formato (Markdown)
+
+Este documento ha sido formateado siguiendo las directrices de la Unidad Didáctica, utilizando los siguientes elementos de Markdown:
+
+*   **Título Principal y Subtítulos:** Uso de `#` y `##` para una estructura clara.
+*   **Énfasis:** Uso de `**negrita**` y `*cursiva*` para destacar conceptos clave.
+*   **Listas:** Uso de listas ordenadas (`1.`) y desordenadas (`*` o `-`).
+*   **Tablas:** Uso de la sintaxis de tablas para comparar conceptos (Cloud vs. Edge).
+*   **Bloques de Código/Citas:** Uso de `>` para la cita de la asignatura.
+*   **Separadores:** Uso de `---` para dividir secciones.
+
+### Recursos Obligatorios Consultados
+
+Para asegurar el correcto formato y sintaxis de este archivo, se han consultado los siguientes recursos:
+
+*   [Documentación Oficial de GitHub - Basic Syntax][1]
+*   [Markdown Cheat Sheet (Español)][2]
+*   [Markdown Guide - Cheat Sheet][3]
+
+[1]: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax "Documentación Oficial de GitHub sobre Markdown"
+[2]: https://markdowncheatsheet.net/es "Markdown Cheat Sheet (Español)"
+[3]: https://www.markdownguide.org/cheat-sheet/ "Markdown Guide - Cheat Sheet"
 
 ---
-*Documentación creada para la asignatura de Tecnologías Habilitadoras Digitales.*
+*UD 03 Sistemas Cloud.*
