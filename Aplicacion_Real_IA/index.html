@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformación Inteligente: IA</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- Cargamos RxJS desde CDN -->
+    <script src="https://unpkg.com/rxjs@7.8.1/dist/bundles/rxjs.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Transformación Inteligente: Aplicación real de la IA</h1>
+        
+        <div class="controls">
+            <select id="sectionSelect">
+                <option value="">Seleccione una sección...</option>
+            </select>
+            <button id="showButton">Mostrar Información</button>
+        </div>
+
+        <div id="contentArea" class="content-area">
+            <h2 id="contentTitle">Seleccione una opción para comenzar</h2>
+            <img id="contentImage" src="" alt="" style="display: none;">
+            <p id="contentText"></p>
+        </div>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

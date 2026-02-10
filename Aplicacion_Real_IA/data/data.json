@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "titulo": "IA en la Medicina",
+    "imagen": "assets/medicina.jpg",
+    "contenido": "La inteligencia artificial está revolucionando la salud mediante el diagnóstico asistido por computadora, la medicina personalizada y la robótica quirúrgica. Los algoritmos de aprendizaje profundo pueden analizar imágenes médicas con una precisión superior a la humana, detectando enfermedades en etapas tempranas."
+  },
+  {
+    "id": 2,
+    "titulo": "IA en la Educación",
+    "imagen": "assets/educacion.jpg",
+    "contenido": "En el ámbito educativo, la IA permite la personalización del aprendizaje, adaptando los contenidos al ritmo y estilo de cada estudiante. Los tutores inteligentes y las plataformas de análisis predictivo ayudan a identificar áreas de mejora y reducir el abandono escolar."
+  },
+  {
+    "id": 3,
+    "titulo": "IA en las Finanzas",
+    "imagen": "assets/finanzas.jpg",
+    "contenido": "El sector financiero utiliza la IA para la detección de fraudes en tiempo real, la gestión automatizada de carteras (robo-advisors) y el análisis de riesgos crediticios. Los modelos predictivos permiten anticipar tendencias del mercado con mayor exactitud."
+  },
+  {
+    "id": 4,
+    "titulo": "IA en la Industria",
+    "imagen": "assets/industria.jpg",
+    "contenido": "La Industria 4.0 se apoya en la IA para el mantenimiento predictivo de maquinaria, la optimización de cadenas de suministro y el control de calidad automatizado. Esto reduce costes operativos y aumenta la eficiencia en la producción."
+  },
+  {
+    "id": 5,
+    "titulo": "IA en el Transporte",
+    "imagen": "assets/transporte.jpg",
+    "contenido": "Desde vehículos autónomos hasta la optimización de rutas logísticas, la IA está transformando la movilidad. Los sistemas inteligentes de gestión de tráfico ayudan a reducir la congestión y las emisiones de carbono en las ciudades modernas."
+  }
+]
